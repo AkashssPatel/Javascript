@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="AKASH_5">
+        <input type="number" name="" id="AKASH_6">
+        <button type="button" onclick="NEW1()">Click Here</button>
+    </form>
+   
+    <script>
+        function NEW1(){
+            let amount_1=document.getElementById('AKASH_5').value;
+            let amount_2=document.getElementById('AKASH_6').value;
+            amount_1=Number.parseInt(amount_1);
+            amount_2=Number.parseInt(amount_2);
+            amount_1 = amount_1 >=10 && amount_1 <=20;
+            amount_2 = amount_2 >=10 && amount_2 <=20;
+
+            if(amount_1 || amount_2)
+            {
+                alert('Hello world');
+            }
+            else{
+                alert('Invalid Input');
+            }
+        }
+
+    </script>
+</html>

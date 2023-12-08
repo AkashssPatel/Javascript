@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <!-- <form action="" id="one">
+        <h1>Student Form</h1>
+        Enter_Your_Name:<input type="text" name="" id="Input_1"><br><br>
+        Enter_Your_Student_Id:<input type="number" name="" id=""><br>
+        <button>submit</button>
+    </form>
+
+    <form action="" id="two">
+        <h2>Businessman Form</h2>
+        Enter_Your_Name:<input type="text" name="" id=""><br><br>
+        Enter_Your_Phone.No:<input type="tel" name="" id=""><br>
+        <button>submit</button>
+    </form>
+
+    <form action="" id="Three">
+        <h2>Housewife Form</h2>
+        Enter_Your_Name:<input type="text" name="" id=""><br><br>
+        Enter_Your_Address:<input type="text" name="" id=""><br>
+        <button>submit</button>
+    </form> -->
+
+    <script>
+    var a=prompt("Enter your Profession:1)Student 2)Businessman 3)Housewife");
+    a=parseInt(a)
+    if(a == 1 )
+        {
+           // let new_1=document.getElementById('one');
+           // let new_1=document.createElement(Form)
+           //two.innerHTML='';
+           //Three.innerHTML='';
+           var form = document.createElement("form");
+           form.setAttribute("method", "post");
+           form.setAttribute("action", "submit.php");
+           // Create an input element for Full Name
+           var FN = document.createElement("input");
+           FN.setAttribute("type", "text");
+           FN.setAttribute("name", "FullName");
+           FN.setAttribute("placeholder", "Full Name");
+           // create a submit button
+           var s = document.createElement("input");
+           s.setAttribute("type", "submit");
+           s.setAttribute("value", "Submit");
+            
+           // Append the full name input to the form
+           form.appendChild(FN);
+            
+           document.getElementsByTagName("body")[0]
+               .appendChild(form);
+ 
+            
+            
+        }
+        else if ( a == 2){
+           let new_2=document.getElementById('two');
+           one.innerHTML='';
+           Three.innerHTML='';
+            document.getElementsByName
+        }
+        else{
+            let new_2=document.getElementById('Three');
+           one.innerHTML='';
+           two.innerHTML='';
+        }
+
+        
+    </script>
+    
+        
+        
+
+    
+</body>
+</html>

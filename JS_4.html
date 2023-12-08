@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <script>
+      //parameter and argument
+      function multi(ok){
+          for(j=0;j<=10;j++)
+          {
+              document.write(`${ok}x${j}=${ok*j}<br>`)
+          }
+      }
+      multi(2);
+  </script>   -->
+  <!-- <script>
+       //return in function
+    function good(){
+        return 10;
+    } 
+    let goodok=good()
+    document.write(goodok);
+  </script> -->
+
+  <!-- <script>
+      //Anonymous Function
+     let akash=function()
+     {
+        document.write('I am akash')
+     }
+     akash();
+  </script> -->
+
+  <!-- <script>
+      //Immediately Invoked Function Expressions (IIFE)
+      (function()
+      {
+        document.write('I am akash');
+      }
+      )();
+  </script> -->
+  <!-- <script>
+      //The arugement object
+      function add(){
+          if(arguments.length==0){
+              document.write('no argument given');
+          }
+          else{
+              let akash=0;
+              for(let q=0;q<arguments.length;q++){
+                  akash=akash+arguments[q];
+              }
+              document.write(akash);
+          }
+      }
+      add(10,100,1000)
+  </script> -->
+  <!-- <script>
+      //object in javascri
+      let person={
+          f_name:'Akash',
+          l_name:'Patel',
+      }
+      document.write(person.l_name+'<br>');
+      document.write(person['f_name']);
+  </script> -->
+
+  <!-- <script>
+    let person={
+        f_name:'Akash',
+        l_name:'Patel',
+        one(){
+            document.write('my name is'+this.f_name+'and i have'+car.brand3);
+        }
+    }
+    let car={
+        brand1:'toyota',
+        brand2:'Maruti'
+        brand3:'BMW'
+    }
+    person.one();
+  </script> -->
+
+  <!-- <script>
+ let a=8.8
+ document.write(a+'<br>')
+
+ let b=Math.round(8.5)
+ document.write(b+'<br>')
+
+ let c=Math.ceil(8.1)
+ document.write(c+'<br>')
+
+ let d=Math.floor(8.5)
+ document.write(d+'<br>')
+
+ let e=Math.trunc(8.8)
+ document.write(e+'<br>')
+
+ let f=Math.pow(3,4)
+ document.write(f+'<br>')
+
+ let g=Math.sqrt(100)
+ document.write(g+'<br>')
+
+ let h=Math.min(1,2,3,4,5,6,7,8,9)
+ document.write(h+'<br>')
+
+ let i=Math.max(1,2,3,4,5,6,7,8,9)
+ document.write(i+'<br>')
+
+  </script> -->
+
+  <!-- <script>
+    let a=Math.random();
+    document.write(a+'<br>')
+
+    let b=Math.random()*10;
+    document.write(b+'<br>')
+
+    let c=Math.floor(Math.random()*10);
+    document.write(c+'<br>')
+
+    let d=Math.floor(Math.random()*11);
+    document.write(d+'<br>')
+
+    let e=Math.floor(Math.random()*(10+1));
+    document.write(e+'<br>')
+
+    let f=Math.floor(Math.random()*(25-15)+15);
+    document.write(f+'<br>')
+
+    function desired_Range(small,big){
+        let g=Math.floor(Math.random()*(big-small)+small+1);
+        document.write(g);
+    }
+    desired_Range(10,100);
+  </script> -->
+<!-- 
+  <script>
+      let a=new Date()
+      document.write(a+'<br>')
+
+      let b=new Date(2025,6)
+      document.write(b+'<br>')
+
+      let c=new Date('nov 28,2023')
+      document.write(c+'<br>')
+
+      let d=c.getTime()
+      document.write(d+'<br>')
+
+      let e=c.getFullYear()
+      document.write(e+'<br>')
+
+      let f=c.getMonth()
+      document.write(f+'<br>')
+
+      let g=c.getDate()
+      document.write(g+'<br>')
+      
+      let h=c.getDay()
+      document.write(h+'<br>')
+
+      let i=c.getHours()
+      document.write(i+'<br>')
+
+      let j=c.getSeconds()
+      document.write(j+'<br>')
+
+      
+  </script> -->
+
+  <script>
+      let user={
+          id:101,email:'akash',personal_info:{
+              name:"AKASH",address:{
+                  street:'abc',city:'def',state:'ghi',
+              }
+          }
+      }
+      
+      console.log(user);
+  </script>
+
+</body>
+</html>

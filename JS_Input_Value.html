@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Print_Input_Value</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="AKASH_1">
+        <button type="button" onclick="NEW()">Click Here</button>
+    </form>
+    <span id="AKASH_2"></span>
+    <script>
+       
+        function NEW(){
+        let amount=document.getElementById('AKASH_1').value;
+            amount=parseInt(amount);
+            document.getElementById('AKASH_2').innerHTML=amount;
+        }
+       
+
+    </script>
+</body>
+</html>

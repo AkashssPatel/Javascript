@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple_Of_11_and_More_than_One_multiple_of_11</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="AKASH_3">
+        <button type="button" onclick="NEW()">Click Here</button>
+    </form>
+    <span id="AKASH_4"></span>
+</body>
+<script>
+    function NEW(){
+        let amount=document.getElementById('AKASH_3').value;
+            amount=parseInt(amount);
+    
+        if(amount % 11 == 0 || amount % 11 == 1){
+            document.getElementById('AKASH_4').innerHTML='HELLO I am special'; 
+        }
+        else{
+            document.getElementById('AKASH_4').innerHTML='invalid';
+        }
+        
+        }
+</script>
+</html>

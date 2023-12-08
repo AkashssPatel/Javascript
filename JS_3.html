@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{text-align: center;}
+        #AKASH{
+            font-weight: bolder;font-size: 100px;
+        }
+        button{color: black;font-size: larger;font-weight:bold;}
+        button:hover{color:whitesmoke;background-color: black;}
+        #new{border:groove brown;padding-top: 20px;padding-bottom: 50px;background-color:sandybrown;}
+    </Style>
+</head>
+<body>
+    <div id="new">
+    <span id="AKASH"></span>
+    <div>
+        <button onclick="Increase()">Increment</button>
+        <button onclick="Reset()">Reset</button>
+        <button onclick="Decrease()">Decrement</button>
+    </div>
+</div>
+
+<script>
+    let Amount=0;
+    document.getElementById("AKASH").innerText=Amount;
+    function Increase(){
+        Amount=++Amount;
+        document.getElementById("AKASH").innerText = Amount;
+        if(Amount>0)
+        {
+            document.getElementById("AKASH").style.color="darkblue";
+        }
+        else if(Amount==0)
+        {
+            document.getElementById("AKASH").style.color="black";
+        }
+
+    }
+    
+    function Reset(){
+        Amount=0;
+        document.getElementById("AKASH").innerText=Amount;
+        document.getElementById("AKASH").style.color="black";
+        
+    }
+
+
+    function Decrease(){
+        Amount= --Amount;
+        document.getElementById("AKASH").innerText = Amount;
+        if(Amount<0)
+        {
+            document.getElementById("AKASH").style.color="red";
+        }
+        else if(Amount==0)
+        {
+            document.getElementById("AKASH").style.color="black";
+        }
+
+    }
+</script>
+</body>
+</html>

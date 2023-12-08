@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+    </style>
+</head>
+<body><fieldset>
+    <legend>Student Result</legend>
+    <form action="">
+        <input type="text" name="" id="Sub_1" placeholder="Computer Science"><br>
+        <input type="text" name="" id="Sub_2" placeholder="Mathematics"><br>
+        <input type="text" name="" id="Sub_3" placeholder="Physics"><br>
+        <input type="text" name="" id="Sub_4" placeholder="Statistics"><br>
+        <input type="text" name="" id="Sub_5" placeholder="Electronics"><br><br>
+<button type="button" onclick="Solve()">Solve</button>
+</fieldset>
+    </form>
+    <script>
+        function Solve(){
+            let Sub1=document.getElementById('Sub_1').value;
+            Sub_1=Number.parseInt(Sub1);
+
+            let Sub2=document.getElementById('Sub_2').value;
+            Sub_2=Number.parseInt(Sub2);
+
+            let Sub3=document.getElementById('Sub_3').value;
+            Sub_3=Number.parseInt(Sub3);
+
+            let Sub4=document.getElementById('Sub_4').value;
+            Sub_4=Number.parseInt(Sub4);
+
+            let Sub5=document.getElementById('Sub_5').value;
+            Sub_5=Number.parseInt(Sub5);
+
+            let total=(Sub_1 + Sub_2 + Sub_3 + Sub_4 + Sub_5)/500*100;
+
+             if(total>=85)
+            {
+                document.write(`Your Percentage is ${total} % and Your Grade is A `);
+            }
+            else if(total>=70 && total<85)
+            {
+                document.write(`Your Percentage is ${total} % and your Grade is B`);
+            }
+            else if(total>=55 && total<70)
+            {
+                document.write(`Your Percentage is ${total}% and your Grade is C`);
+            }
+            else if(total>=35 && total<55)
+            {
+                document.write(`Your Percentage is ${total} % and your Grade is D`);
+            }
+            else
+            {
+                document.write(`Your Percentage is ${total} % and your Grade is E`);
+            } 
+            
+        }
+         
+        
+    </script>
+</body>
+</html>
